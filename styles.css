@@ -1,16 +1,15 @@
 body{
+    font-family: 'Courier New', Courier, monospace;
     background-color: #1F2937;
     margin: 0px;
     padding: 0px;
-    color: #333;
+    color: black;
     text-align: center;
 }
 
 #heading{
     background-color: white;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
     border-bottom: 5px solid black;
 }
@@ -26,19 +25,71 @@ body{
 }
 
 #mainGame{
+    margin: 20px auto;
+    padding: 20px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 15px;
-    gap: 15px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+input{
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: lightslategray;
+}
+
+button:disabled{
+    background-color: ghostwhite;
 }
 
 #lowerGame{
-    color: white;
-    display: flex;
-    justify-content: space-around;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
 }
 
+#feedback{
+    font-size: 1.5em;
+    margin-top: 20px;
+    min-height: 50px;
+    color: white;
+}
+
+#chancesLeft{
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: white;
+}
+
+#feedback span{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#feedback span[stlye*="color: red"]{
+    background-color: #ffcccc;
+}
+
+#feedback span[style *="color: green"]{
+    background-color: ccffcc;
+}
 
 
